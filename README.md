@@ -1,7 +1,7 @@
 a compression alogorithm that can compress directories into files
 
 compressing a directory:
-``
+```
 gem zip ./data
 ```
 
