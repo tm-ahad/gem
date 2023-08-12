@@ -26,8 +26,6 @@ func handleErr(err error) {
 func zip(path string, dir fs.DirEntry, e error) error {
 	p := strings.Join(strings.Split(path, "/")[1:], "/")
 
-	fmt.Println(p)
-
 	if !dir.IsDir() {
 		cont, err := os.ReadFile(path)
 		handleErr(err)
